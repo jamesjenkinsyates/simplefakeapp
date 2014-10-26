@@ -46,7 +46,7 @@
 <!-- ****** HERO UNIT *******-->
 
 <div class="hero_img_div">
-	<%= image_tag "music5.png"%>
+	<%= image_tag "music5.png", class: "w100" %>
 </div>
 
 <div class="hero" id="hero">
@@ -54,7 +54,7 @@
 	<h1>Learn to play any musical instrument</h1>
 	
 	<%= form_for @user, url: users_path do |f| %>
-	  <%= f.text_field :email, placeholder: "Your Email", id: "email_input" %>
+	  <%= f.email_field :email, placeholder: "Your Email", id: "email_input", required: "true" %>
 	  <%= f.submit "Get Early Access", class: "btn btn_blue signup_btn email_btn" %>
 	<% end %>
 <!-- 	<form id = "signup_form1">
@@ -78,7 +78,7 @@
 		</ul> 
 	</div>
 	<div class="grid-6 img_left">
-		<%= image_tag "pic8.png" %>
+		<%= image_tag "pic8.png", class: "w100" %>
 	</div>
 </div>
 
@@ -92,7 +92,7 @@
 		</ul> 
 	</div>
 	<div class="grid-6 img_right">
-		<%= image_tag "pic6.png" %>
+		<%= image_tag "pic6.png", class: "w100"  %>
 	</div>
 </div>
 
@@ -106,7 +106,7 @@
 		</ul> 
 	</div>
 	<div class="grid-6 img_left">
-		<%= image_tag "pic7.png" %>
+		<%= image_tag "pic7.png", class: "w100"  %>
 	</div>
 </div>
 
