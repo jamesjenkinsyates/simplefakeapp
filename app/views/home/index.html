@@ -1,0 +1,137 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+    <meta charset="utf-8"> 
+    <title>Learn Musical Intruments</title> 
+    <link rel="stylesheet" href="css/normalize.css"> 
+    <link rel="stylesheet" type="text/css" href="css/grid.css"> 
+    <link rel="stylesheet" href="css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:300|Raleway:300' rel='stylesheet' type='text/css'> 
+    <meta name="viewport" content="initial-scale=1"> 
+</head> 
+
+<body>
+<header>
+	 <div class="color_bar">
+	 	<div class="color_yellow"></div>
+	 	<div class="color_amber"></div>
+	 	<div class="color_orange"></div>
+	 	<div class="color_sunset"></div>
+	 	<div class="color_red"></div>
+	 	<div class="color_fuchsia"></div>
+	 	<div class="color_purple"></div>
+	 	<div class="color_indigo"></div>
+	 	<div class="color_blue"></div>
+	 	<div class="color_aqua"></div>
+	 	<div class="color_green"></div>
+	 	<div class="color_lime"></div>
+	 </div>
+
+
+	 <nav> 
+	 	<div class="grid-container"> 
+	 		<div class="grid-2 logo"> 
+	 			<h1>Octave</h1> 
+	 		</div>
+	 		<div class="grid-8 nav_items">
+	 			<ul>
+	 				<li><!-- nav list --></li>
+	 				<li><!-- nav list --></li>
+	 				<li><!-- nav list --></li>
+	 				<li><!-- nav list --></li>
+	 				<a href="#hero"><li class="btn btn_blue signup_btn">Sign Up</li></a>
+	 			</ul>
+	 		</div>
+	 	</div>
+	 </nav> 
+ </header> 
+
+<!-- ****** HERO UNIT *******-->
+
+<div class="hero_img_div">
+	<%= image_tag "music5.png"%>
+</div>
+
+<div class="hero" id="hero">
+	<span>
+	<h1>Learn to play any musical instrument</h1>
+	
+	<%= form_for @user, url: users_path do |f| %>
+	  <%= f.text_field :email, placeholder: "Your Email", id: "email_input" %>
+	  <%= f.submit "Get Early Access", class: "btn btn_blue signup_btn email_btn" %>
+	<% end %>
+<!-- 	<form id = "signup_form1">
+          <input type="text" name="mail" placeholder="Your Email" id="email_input">
+          <input type="submit" Value="Get Early Access" class="btn btn_blue signup_btn email_btn" > 
+     </form>  --> 
+	<span>
+</div>
+
+<!-- ****** HERO UNIT END ****** -->
+
+
+
+<div class="grid-container examples color_lightblue white_text">
+	<div class="grid-6 example_right">
+		<h1>Expert Instructors</h1>
+		<h2> Lesson are taught by expect instructor who masters in their trade and love what they do</h2>
+		<ul>
+			<li class="white_text"> Small group classes to keep you motivate </li>
+			<li class="white_text">Lessons always available to play back online</li>
+		</ul> 
+	</div>
+	<div class="grid-6 img_left">
+		<%= image_tag "pic8.png" %>
+	</div>
+</div>
+
+<div class="grid-container examples">
+	<div class="grid-6 example_left">
+		<h1>Learn Any Instrument</h1>
+		<h2>Our curated list of expert tutors cover just about every popular musical instrument</h2>
+		<ul>
+			<li>We add new instruments based on our users recomendations</a></li>
+			<li> Any instrument not covered? Let us know </li>
+		</ul> 
+	</div>
+	<div class="grid-6 img_right">
+		<%= image_tag "pic6.png" %>
+	</div>
+</div>
+
+<div class="grid-container examples color_green white_text">
+	<div class="grid-6 example_right">
+		<h1>Learn with family & friends</h1>
+		<h2>You can create groups of family and friend to learn a particualar instrument with </h2>
+		<ul>
+			<li><a class="white_text" href="">Or someone new arcoss the continent</a></li>
+			<li><a class="white_text" href="">All to make it as east to learn as possible</a></li>
+		</ul> 
+	</div>
+	<div class="grid-6 img_left">
+		<%= image_tag "pic7.png" %>
+	</div>
+</div>
+
+
+<div class= "call_action">
+
+	<br>
+
+	<h1>Learn a new musical instrument today </h1>
+
+	<a href="#hero" class="btn btn_blue white_text"> Get Early Access </a>
+</div>
+
+
+<footer>
+	<ul>
+		<li>&copy; Octave</li>
+		<li><a href="">Sign Up</a></li>
+		<li><a href="">Login</a></li>
+	</ul>
+
+</footer>
+
+</body>
+</html>
