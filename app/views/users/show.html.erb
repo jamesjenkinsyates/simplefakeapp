@@ -1,62 +1,40 @@
-<!DOCTYPE html> 
-<html>
-<head> 
-    <meta charset="utf-8"> 
-    <title>Learn Musical Intruments</title> 
-    <link rel="stylesheet" href="css/normalize.css"> 
-    <link rel="stylesheet" type="text/css" href="css/grid.css"> 
-    <link rel="stylesheet" href="css/main.css">
-    <link href='http://fonts.googleapis.com/css?family=Quicksand:300|Raleway:300' rel='stylesheet' type='text/css'> 
-    <meta name="viewport" content="initial-scale=1"> 
-</head> 
-
-<body>
 <header>
-	 <div class="color_bar">
-	 	<div class="color_yellow"></div>
-	 	<div class="color_amber"></div>
-	 	<div class="color_orange"></div>
-	 	<div class="color_sunset"></div>
-	 	<div class="color_red"></div>
-	 	<div class="color_fuchsia"></div>
-	 	<div class="color_purple"></div>
-	 	<div class="color_indigo"></div>
-	 	<div class="color_blue"></div>
-	 	<div class="color_aqua"></div>
-	 	<div class="color_green"></div>
-	 	<div class="color_lime"></div>
-	 </div>
+  <div class="color_bar">
+    <div class="color_yellow"></div>
+    <div class="color_amber"></div>
+    <div class="color_orange"></div>
+    <div class="color_sunset"></div>
+    <div class="color_red"></div>
+    <div class="color_fuchsia"></div>
+    <div class="color_purple"></div>
+    <div class="color_indigo"></div>
+    <div class="color_blue"></div>
+    <div class="color_aqua"></div>
+    <div class="color_green"></div>
+    <div class="color_lime"></div>
+  </div>
 
 
-	 <nav> 
-	 	<div class="grid-container"> 
-	 		<div class="grid-2 logo"> 
-	 			<h1>Octave</h1> 
-	 		</div>
-	 		<div class="grid-8 nav_items">
-	 			<ul>
-	 				<li><!-- nav list --></li>
-	 				<li><!-- nav list --></li>
-	 				<li><!-- nav list --></li>
-	 				<li><!-- nav list --></li>
-<!-- 	 				<a href="#hero"><li class="btn btn_blue signup_btn">Sign Up</li></a>
- -->	 			</ul>
-	 		</div>
-	 	</div>
-	 </nav> 
- </header> 
+  <nav> 
+    <div class="grid-container"> 
+      <div class="grid-2 logo"> 
+        <h1>Octave</h1> 
+      </div>
+    </div>
+  </nav> 
+</header> 
 
 <!-- ****** HERO UNIT *******-->
 
 <div class="hero_img_div">
-	<%= image_tag "music5.png"%>
+  <%= image_tag "music5.png"%>
 </div>
 
 <div class="hero" id="hero">
-	<span>
-	<h1>Not yet! But click below to earn something awesome!</h1>
+  <span>
+    <h1>Not yet! But click below to earn something awesome!</h1>
+    <%= link_to 'Refer 5 friends and get XYZ', @external_url, class: "btn btn_blue signup_btn email_btn" %>
+  </span>
+</div>
 
-          <%= link_to 'Refer 5 friends and get XYZ', @external_url, class: "btn btn_blue signup_btn email_btn" %>
-          <img src="http://growthengine.herokuapp.com/7/t.gif">
-</body>
-</html>
+<img src="http://growthengine.herokuapp.com/7/t.gif">
