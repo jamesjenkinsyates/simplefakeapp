@@ -7,7 +7,7 @@ class UsersController < ApplicationController
 
   def show
 	@user = User.find(params[:id])
-  	@external_url = "http://growthapp.co/d/4/#{@user.email}"
+  	@external_url = "http://growthapp.co/d/7/#{@user.email}"
 	
   end
 
