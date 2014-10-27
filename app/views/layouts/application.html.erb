@@ -4,11 +4,15 @@
   <title>Octave</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link href='http://fonts.googleapis.com/css?family=Quicksand:300|Raleway:300' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
 <%= yield %>
 
+<% if Rails.env.production? %>
+<%= render 'shared/google_analytics' %>
+<% end %>
 </body>
 </html>
