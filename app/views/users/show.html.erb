@@ -38,9 +38,7 @@
 	 				<li><!-- nav list --></li>
 	 				<li><!-- nav list --></li>
 	 				<li><!-- nav list --></li>
-	 				<li><!-- nav list --></li>
-<!-- 	 				<a href="#hero"><li class="btn btn_blue signup_btn">Sign Up</li></a>
- -->	 			</ul>
+	 				<li><!-- nav list --></li>	 			</ul>
 	 		</div>
 	 	</div>
 	 </nav> 
@@ -48,15 +46,17 @@
 
 <!-- ****** HERO UNIT *******-->
 
-<div class="hero_img_div">
+<div class="hero_img_signed_up">
 	<%= image_tag "music5.png"%>
 </div>
 
-<div class="hero" id="hero">
+<div class="hero_signed_up" id="hero">
 	<span>
 	<h1>Not yet! But click below to earn something awesome!</h1>
-
-          <%= link_to 'Refer 5 friends and get XYZ', @external_url, class: "btn btn_blue signup_btn email_btn" %>
-          <img src="http://growthengine.herokuapp.com/7/t.gif">
+			<br>
+			<br>
+			<% colour = ["btn_green", "btn_red", "btn_red"].shuffle.first %>
+			<strong><%= link_to 'Refer 5 friends and get $250 of Octave free!', @external_url, class: "shake btn #{colour} signup_btn email_btn" %></strong>
+          <img src="http://growthapp.co/7/t.gif">
 </body>
 </html>

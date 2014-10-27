@@ -56,6 +56,11 @@ a, body {
 	color: white;
 }
 
+.btn_red {
+	background-color:red;
+	color: white;
+}
+
 .btn_green {
 	background-color: #91D271;
 	color: white;
@@ -170,6 +175,13 @@ nav h1 {
 
 }
 
+.hero_img_signed_up {
+	width: 150px;
+	height: 200px;
+	margin: 150px auto 0px auto;
+
+}
+
 .music_img {
 	width: 100%;
 
@@ -182,6 +194,15 @@ nav h1 {
 	height: 280px;
 	margin: 0 auto;
 	line-height: 300px;
+	position: relative;
+	top: 20px;
+}
+
+.hero_signed_up {
+	text-align: center;
+	width: 80%;
+	height: 280px;
+	margin: 0 auto;
 	position: relative;
 	top: 20px;
 }
